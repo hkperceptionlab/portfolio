@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Hwakyung Kang">
+<title>Life of Pi: Audience presence and perception | THE H.K. PERCEPTION LAB</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%2337352f%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2741%27%20font-family%3D%27Helvetica%2CArial%2Csans-serif%27%20font-size%3D%2724%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%20text-anchor%3D%27middle%27%3EHK%3C/text%3E%3C/svg%3E">
+<style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+	/* Paint a complete callout box on every PDF page fragment. */
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+:root { --ink: rgb(55,53,47); --muted: rgba(55,53,47,0.62); --line: rgba(55,53,47,0.14); --bg: #fff; }
+html { background: var(--bg); }
+body { font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+       color: var(--ink); max-width: none !important; margin: 0 !important; padding: 0 !important; -webkit-font-smoothing: antialiased; }
+.topbar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+          border-bottom: 1px solid var(--line); font-size: 14px; }
+.topbar-inner { max-width: 820px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; }
+.topbar a { color: var(--muted); text-decoration: none; border-radius: 4px; padding: 2px 4px; }
+.topbar a:hover { background: rgba(55,53,47,0.07); color: var(--ink); }
+.topbar a.home { color: var(--ink); font-weight: 600; }
+.topbar .sep { color: rgba(55,53,47,0.3); }
+.topbar .here { color: var(--ink); padding: 2px 4px; }
+main { max-width: 820px; margin: 0 auto; padding: 48px 24px 96px; }
+article.page { max-width: none !important; margin: 0 !important; padding: 0 !important; }
+.page-title { font-size: 2.4rem; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 0.5em; }
+img { max-width: 100%; height: auto; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+a.quiet, a.quiet * { color: inherit; text-decoration: none !important; border-bottom: none !important; }
+a.quiet:hover strong { text-decoration: underline !important; text-decoration-color: rgba(55,53,47,0.4) !important; }
+details > summary { cursor: pointer; }
+.cover-meta { margin: -0.2em 0 1.6em; padding-bottom: 1em; border-bottom: 1px solid var(--line); }
+.cover-meta p { margin: 0; }
+.cover-meta .byline { font-size: 1.3rem; font-weight: 600; }
+.cover-meta .school { color: var(--muted); margin-top: 0.15em; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 1.2em 0 0.5em; }
+.card { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px 20px; border: 1px solid var(--line); border-radius: 8px;
+        color: var(--ink) !important; text-decoration: none !important; border-bottom: 1px solid var(--line) !important; background: #fff; transition: background .12s; }
+.card:hover { background: rgba(55,53,47,0.035); }
+.card-title { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+.card-desc { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+@media (max-width: 640px) { .gallery { grid-template-columns: 1fr; } }
+.pagefoot { max-width: 820px; margin: 0 auto; padding: 24px 24px 48px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.pagefoot a { color: var(--muted); }
+a:focus-visible, summary:focus-visible { outline: 2px solid #2383e2; outline-offset: 2px; border-radius: 3px; }
+@media (max-width: 640px) {
+  main { padding: 28px 18px 72px; }
+  .page-title { font-size: 1.8rem; }
+  .topbar-inner { padding: 8px 16px; }
+  .column-list { display: block !important; }
+  .column-list > .column { width: 100% !important; padding: 0 !important; }
+}
+</style></head>
+<body><nav class="topbar" aria-label="Breadcrumb"><div class="topbar-inner"><a class="home" href=".././">THE H.K. PERCEPTION LAB</a><span class="sep">/</span><a href="../theater-persona-cognition/">5. Theater, Persona &amp; Cognition</a><span class="sep">/</span><span class="here">Life of Pi: Audience presence and perception</span></div></nav>
+<main><article class="page sans" id="3e66d563-4ee0-80d6-953a-d84cf6c55323"><header><h1 class="page-title" dir="auto">Life of Pi: Audience presence and perception</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><p class="" dir="auto" id="3e66d563-4ee0-80af-aac7-dd0e0a43176d"><em>How I tried to understand why a stage can feel real by reading and analyzing 1,376 audience reviews.</em></p><h2 class="" dir="auto" id="3e66d563-4ee0-80ed-9bee-c1be3da7af37">1. Where the question began</h2><p class="" dir="auto" id="3e76d563-4ee0-804c-9267-dbc2d0164241">To be honest, I also had a practical reason for starting this project. I wanted to finish at least one research project before graduating from high school. I did not know exactly what I wanted to study, but I wanted the project to be connected to something I had really experienced.</p><p class="" dir="auto" id="3e76d563-4ee0-80e3-b87f-f0ce1f678798">I had worked in school theater for three years, both backstage and onstage. This made me curious about what audience members experienced. They knew that the actors were acting and that the tiger in <em>Life of Pi</em> was a puppet. However, they could still feel afraid of the tiger or become emotional about Pi’s story. I wondered how a stage could feel real even when the audience knew that it was not real.</p><div class="column-list" data-notion-column-list="" dir="auto" id="3e66d563-4ee0-8002-b79a-edee98ae9ad5"><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3e66d563-4ee0-80ba-824d-c96c9d062811" style="width:50%"><figure class="image" data-notion-image="Life%20of%20Pi%20Audience%20presence%20and%20perception/KakaoTalk_20260407_102232741_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.jpg" dir="ltr" id="3e66d563-4ee0-80bd-9b82-fadb7d5b895e"><img alt="" loading="lazy" src="../assets/img/life-of-pi-01.jpg" style="width:432px"/></figure><p class="" dir="auto" id="3e66d563-4ee0-80ad-a093-e286a765e9f5"><strong>At the theater</strong></p><p class="" dir="auto" id="3e66d563-4ee0-8025-8788-ca28270127e8">Looking closely at the size and movement of the Richard Parker puppet.</p><h2 class="" dir="auto" id="3e66d563-4ee0-803c-b66d-dc21f970c1e4">2. How the research changed</h2></div><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3e66d563-4ee0-8019-8613-c4b4e836d8ea" style="width:50%"><figure class="image" data-notion-image="Life%20of%20Pi%20Audience%20presence%20and%20perception/f5686055-d1de-4125-86b8-7ca6cfd3dcd1.png" dir="ltr" id="3e66d563-4ee0-8025-80d7-da687ef5507f"><img alt="" loading="lazy" src="../assets/img/life-of-pi-02.jpg" style="width:430.44917257683215px"/></figure><p class="" dir="auto" id="3e66d563-4ee0-80f1-926f-db18c31c3430"><strong>My notes from the performance</strong></p><p class="" dir="auto" id="3e66d563-4ee0-8028-b6a2-c3da20ce17f8">Notes I wrote during the performance and organized again after returning home.</p><p class="" dir="auto" id="3e66d563-4ee0-80b2-8162-c5d8cf12e736">
+</p></div></div><p class="" dir="auto" id="3e76d563-4ee0-8055-ae68-e4467a1b4b37">At first, I thought I could collect audience reviews, count some words, and find an answer. I began with three categories: human presence, spatial presence, and empathic presence. I marked only the most noticeable category in each review with a circle.</p><p class="" dir="auto" id="3e76d563-4ee0-804c-b1f6-f19b3ba05bfb">I watched the performance from the third floor. From there, I could see the whole stage and the floor projections clearly. The stage design was one of the most impressive parts for me, but it was difficult to see the actors’ faces. While reading the reviews, I often remembered my own experience. I began to wonder whether people sitting on different floors noticed different parts of the performance.</p><p class="" dir="auto" id="3e76d563-4ee0-809a-b312-d867403448c0">Because of this, I started recording seat information. If a reviewer clearly wrote the floor, I recorded it as a stated seat. If the exact floor was not written but the review gave some clues, I kept it separately as an estimated upper or lower seat.</p><p class="" dir="auto" id="3e76d563-4ee0-80cb-87b4-e7f31dfc52de">I also noticed that many reviewers said they had watched the performance more than once. I do not go to the theater very often, so I was surprised by how often this appeared. I decided to mark repeat attendance in case it showed a pattern later.</p><p class="" dir="auto" id="3e76d563-4ee0-80f3-8e6e-e14966179ffe">As I continued, I found a problem with this system. Many reviews talked about more than one kind of presence. Sometimes I read the same review several times and still could not decide which single category to choose. I was not sure whether my decisions were fair. I felt confused, and I began to think that this work was going beyond what I knew how to do.</p><p class="" dir="auto" id="3e76d563-4ee0-803a-a239-fbed41288f6a">I finally changed the system so that one review could have more than one category. Inside human presence, I also separated comments about actors from comments about puppets and puppeteers.</p><p class="" dir="auto" id="3e76d563-4ee0-80b0-9ba0-d057bca13758">As the spreadsheet became more organized, I changed the circles into 1. Near the end, I noticed that a few reviews described actors, puppets, or stage effects negatively. I added -1 for these negative descriptions. A blank cell meant that the review did not clearly mention that category.</p><p class="" dir="auto" id="3e76d563-4ee0-80fe-9ba6-fc9b77c593c6">Collecting, coding, changing the rules, and checking the reviews again took almost six months. Writing and revising the report continued after the analysis, so the full project took almost seven months. I did much of this while also doing my regular schoolwork. Sometimes I felt that I could not finish the project. I could have kept the earlier rule and finished sooner, but it no longer seemed fair to the reviews.</p><h2 class="" dir="auto" id="3e66d563-4ee0-8045-96aa-f998cb8b7b21">3. Research snapshot</h2><div class="column-list" data-notion-column-list="" dir="auto" id="3e66d563-4ee0-80ef-805e-f4372bbfedfc"><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3e66d563-4ee0-80e6-88b6-c8dbd4c69046" style="width:50%"><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-background="gray_background" data-notion-callout-icon="💡" dir="ltr" id="3e66d563-4ee0-8002-8edc-ec6a30b8bdf4" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p class="" dir="auto" id="3e66d563-4ee0-80ae-a738-c29d7be17c2c"><strong>1,389 reviews collected</strong></p><p class="" dir="auto" id="3e66d563-4ee0-80b1-ac51-db79fadba519">Public reviews from two Korean ticketing platforms.</p></div></aside></div><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3e66d563-4ee0-80b1-9923-fbaedd4065f1" style="width:50%"><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-background="gray_background" data-notion-callout-icon="💡" dir="ltr" id="3e66d563-4ee0-8058-8174-e5e949511300" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p class="" dir="auto" id="3e66d563-4ee0-806a-bf01-e64ac0f61faf"><strong>1,376 reviews analyzed</strong></p><p class="" dir="auto" id="3e66d563-4ee0-803d-b31b-cf7f5b766456">The main dataset after removing 13 repeated copies of longer reviews.</p></div></aside></div></div><div class="column-list" data-notion-column-list="" dir="auto" id="3e66d563-4ee0-805d-be29-d16596a17695"><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3e66d563-4ee0-8022-8aa5-f41ded0ef1d1" style="width:50%"><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-background="gray_background" data-notion-callout-icon="💡" dir="ltr" id="3e66d563-4ee0-801d-8874-f15cf0d23964" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p class="" dir="auto" id="3e76d563-4ee0-8099-835d-dc4f4d7f4ff3"><strong>Almost 7 months</strong></p><p class="" dir="auto" id="3e76d563-4ee0-809e-a12a-d21134491b39">From collecting the reviews to completing the report.</p></div></aside></div><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3e66d563-4ee0-8011-8b0e-c7add36f271f" style="width:50%"><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-background="gray_background" data-notion-callout-icon="💡" dir="ltr" id="3e66d563-4ee0-806d-b7a9-d708967eaf8e" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p class="" dir="auto" id="3e66d563-4ee0-8038-b704-d9254cfc787e"><strong>3 categories of presence</strong></p><p class="" dir="auto" id="3e66d563-4ee0-8023-9443-fdd62c178372">Human presence, spatial presence, and empathic presence.</p></div></aside></div></div><h2 class="" dir="auto" id="3e66d563-4ee0-8076-a835-ff7caa369f8e">4. Final coding system</h2><p class="" dir="auto" id="3e66d563-4ee0-8060-b54c-ede2baffdc01">In the final version, I used three main categories. I looked at what the reviewers described, not only whether they used a certain word.<br/></p><div class="table-wrap"><table class="simple-table" dir="ltr" id="3e66d563-4ee0-8042-b363-c04cccbe984a"><thead class="simple-table-header"><tr dir="ltr" id="3e66d563-4ee0-809d-b2e9-c2a592e14917"><th class="simple-table-header-color simple-table-header" id="NAP]" style="width:239.66666666666666px">Category</th><th class="simple-table-header-color simple-table-header" id="oQEY" style="width:442.6666717529297px">What I looked for in the reviews</th></tr></thead><tbody><tr dir="ltr" id="3e66d563-4ee0-8053-8c89-cd571d6937e2"><td class="" id="NAP]" style="width:239.66666666666666px">Human presence</td><td class="" id="oQEY" style="width:442.6666717529297px">Positive comments about actors, puppets, or puppeteers, including acting, voices, movement, or puppets feeling alive.</td></tr><tr dir="ltr" id="3e66d563-4ee0-80d0-b42d-ce3d0ced823c"><td class="" id="NAP]" style="width:239.66666666666666px">Spatial presence</td><td class="" id="oQEY" style="width:442.6666717529297px">Comments that the stage felt like a real place, or positive comments about lighting, sound, projections, or stage design.</td></tr><tr dir="ltr" id="3e66d563-4ee0-80e9-a0bc-e08cad8c0d1e"><td class="" id="NAP]" style="width:239.66666666666666px">Empathic presence</td><td class="" id="oQEY" style="width:442.6666717529297px">Comments that connected Pi’s story, faith, survival, or emotions with the reviewer’s own thoughts or feelings.</td></tr></tbody></table></div><h3 class="" dir="auto" id="3e76d563-4ee0-808b-a77d-e8730f144af6">A. How I marked the reviews</h3><ul class="bulleted-list" dir="auto" id="3e76d563-4ee0-80ed-a666-e2f27c155243"><li style="list-style-type:disc">1 meant that I found a clear positive mention that met the rule.</li></ul><ul class="bulleted-list" dir="auto" id="3e76d563-4ee0-8055-ab65-f455471dcc48"><li style="list-style-type:disc">-1 meant that the reviewer described that part of the performance negatively.</li></ul><ul class="bulleted-list" dir="auto" id="3e76d563-4ee0-8023-a152-eebde0ac8651"><li style="list-style-type:disc">A blank cell meant that I did not find a clear written mention. It did not mean that the reviewer did not have the experience.</li></ul><h3 class="" dir="auto" id="3e66d563-4ee0-80a6-9b06-f5b3f4906989">B. Additional information I marked</h3><ul class="bulleted-list" dir="auto" id="3e66d563-4ee0-8036-9ffb-dc87da191812"><li style="list-style-type:disc"><strong>Actors and puppets:</strong> Inside human presence, I marked actors separately from puppets and puppeteers.</li></ul><ul class="bulleted-list" dir="auto" id="3e66d563-4ee0-8015-8697-c3f1c6a8301a"><li style="list-style-type:disc"><strong>Directly stated seats:</strong> I recorded the exact floor when a reviewer clearly mentioned it.</li></ul><ul class="bulleted-list" dir="auto" id="3e66d563-4ee0-80fe-a325-c4f00af90af3"><li style="list-style-type:disc"><strong>Estimated seats:</strong> When the exact floor was not written but the review gave enough clues, I marked it separately as an estimated upper or lower seat.</li></ul><ul class="bulleted-list" dir="auto" id="3e66d563-4ee0-8023-b87b-e7b2a7e13f07"><li style="list-style-type:disc"><strong>Repeat attendance:</strong> I marked reviews written by people who said that they had watched the performance more than once.</li></ul><p class="" dir="auto" id="3e66d563-4ee0-809e-8fce-d4a54a0778e0">For the seating-level analysis, I used only the 173 reviews that directly stated the floor. I kept the estimated seats in my working spreadsheet, but I did not include them in the seating figure.</p><h2 class="" dir="auto" id="3e66d563-4ee0-80dd-99d6-f5d270880780">5. What I found</h2><h3 class="" dir="auto" id="3e66d563-4ee0-8043-8224-f1cbd215d668">A. Overall patterns</h3><figure class="image" data-notion-image="Life%20of%20Pi%20Audience%20presence%20and%20perception/Figure_1_presence_mentions_and_comentions_(3)_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png" dir="ltr" id="3e66d563-4ee0-8041-8d92-e015bc8aee18"><img alt="" loading="lazy" src="../assets/img/life-of-pi-03.jpg" style="width:528px"/></figure><p class="" dir="auto" id="3e66d563-4ee0-80ba-a780-d7e30f971a74"><strong>Presence mentions and co-mentions in 1,376 audience reviews</strong></p><p class="" dir="auto" id="3e76d563-4ee0-800e-804b-e1b541750560">The diagonal cells show the number of reviews with a positive mention in each category. The other cells show how often two categories appeared together. One review could be included in more than one category.</p><p class="" dir="auto" id="3e76d563-4ee0-8086-8c46-f9394ce653e1">Human presence appeared most often, in 949 reviews (69.0%). Spatial presence appeared in 566 reviews (41.1%), and empathic presence appeared in 349 reviews (25.4%).</p><p class="" dir="auto" id="3e76d563-4ee0-80ac-833b-f42568d44053">Human and spatial presence appeared together in 456 reviews. Human and empathic presence appeared together in 250 reviews, while spatial and empathic presence appeared together in 153 reviews. Human and spatial presence were the most common pair.<br/>I used chi-square tests to compare each pair of presence categories. Only human and spatial presence showed a statistically clear relationship. The relationship was not very strong, but it showed that reviewers often described the performers and the stage together. It did not show that one caused the other.</p><h3 class="" dir="auto" id="3e66d563-4ee0-80c2-adf1-d859a2652d21">B. Seating level</h3><figure class="image" data-notion-image="Life%20of%20Pi%20Audience%20presence%20and%20perception/Figure_2_presence_by_stated_seating_level_(3)_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png" dir="ltr" id="3e66d563-4ee0-8092-968d-ecda5fc5e538"><img alt="" loading="lazy" src="../assets/img/life-of-pi-04.jpg" style="width:624px"/></figure><p class="" dir="auto" id="3e66d563-4ee0-8074-bd24-c29cef5816db"><strong>Presence mentions by stated seating level</strong></p><p class="" dir="auto" id="3e76d563-4ee0-804f-9f55-d43f42ec6aee">This figure includes only the 173 reviews that clearly stated the seating floor.</p><p class="" dir="auto" id="3e76d563-4ee0-8096-a583-f8709cb03c1f">Spatial presence appeared in 32.5% of the first-floor reviews, 75.8% of the second-floor reviews, and 82.4% of the third-floor reviews. Human presence showed a different pattern. It appeared in 76.6% of the first-floor reviews and about 68% of the reviews from the second and third floors.</p><p class="" dir="auto" id="3e76d563-4ee0-803b-adf0-e21599079dd6">Empathic presence was mentioned less often on every floor. It appeared in 13.0% of the first-floor reviews, 19.4% of the second-floor reviews, and 14.7% of the third-floor reviews.</p><p class="" dir="auto" id="3e76d563-4ee0-809b-a369-feb063d87941">The spatial pattern reminded me of my own experience on the third floor. I could see the whole stage and the floor projections clearly, but the actors’ faces were more difficult to see.</p><p class="" dir="auto" id="3e76d563-4ee0-807c-a1d4-e80339afe1b5">This made me wonder whether the seating level changed what audience members noticed. However, only 173 reviewers clearly stated their floor, and the reviewers had chosen their own seats. I could see a pattern in these reviews, but I could not say that the seat caused the difference.</p><h3 class="" dir="auto" id="3e66d563-4ee0-8043-90d3-e30f921eedc9">C. Repeat attendance</h3><div class="column-list" data-notion-column-list="" dir="auto" id="3e66d563-4ee0-80ef-aa4d-da14fb70d212"><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3e66d563-4ee0-806e-a86c-c7ac659db54f" style="width:50%"><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-background="gray_background" data-notion-callout-icon="💡" dir="ltr" id="3e66d563-4ee0-80c6-811d-ff29bae77b2e" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p class="" dir="auto" id="3e66d563-4ee0-80a3-a1c6-c74d018e68d7"><strong>190 reviews</strong></p><p class="" dir="auto" id="3e66d563-4ee0-8015-bab8-eba20005d9c4">These reviews directly mentioned watching the performance more than once.</p></div></aside></div><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3e66d563-4ee0-8028-a2f9-ecb4976a236f" style="width:50%"><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-background="gray_background" data-notion-callout-icon="💡" dir="ltr" id="3e66d563-4ee0-801c-a5ae-e9b93f789aa8" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p class="" dir="auto" id="3e66d563-4ee0-80ee-bdf3-c0630bd4e26f"><strong>38.4% empathic presence</strong></p><p class="" dir="auto" id="3e66d563-4ee0-80c6-8565-d3912d95d7f5">73 of the 190 repeat-attendance reviews, compared with 25.4% in the full dataset.</p></div></aside></div></div><p class="" dir="auto" id="3e76d563-4ee0-807e-a2f0-fa32ba0b6449">Among the 190 repeat-attendance reviews, 149 mentioned human presence (78.4%), 67 mentioned spatial presence (35.3%), and 73 mentioned empathic presence (38.4%). The largest difference from the full dataset appeared in empathic presence.</p><p class="" dir="auto" id="3e66d563-4ee0-806f-b160-fafced468806">The repeat-attendance reviews also used words such as <em>Pi</em>, <em>story</em>, <em>emotion</em>, <em>feeling, </em>and <em>thought</em> more often than the full dataset. I found this interesting because these reviewers wrote more about Pi’s story and their own thoughts.</p><p class="" dir="auto" id="3e66d563-4ee0-80fd-897b-d73c989df0e6">However, I could not treat all other reviews as first-time attendance. Some people may have watched the performance more than once without writing it in their review. This was interesting, but I could not tell whether watching the play more than once increased empathic presence.</p><h3 class="" dir="auto" id="3e76d563-4ee0-8033-b72b-e481acf16249">D. Stage transitions and time passage</h3><figure class="image" data-notion-image="Life%20of%20Pi%20Audience%20presence%20and%20perception/Figure_3_stage_transition_and_time_passage_(5)_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png" dir="ltr" id="3e76d563-4ee0-8028-ae6b-d0cd3fb5f88c"><img alt="" loading="lazy" src="../assets/img/life-of-pi-05.jpg" style="width:624px"/></figure><p class="" dir="auto" id="3e76d563-4ee0-8015-ac90-e4015c1743bd"><strong>Manually checked mentions of stage transitions and time passage</strong></p><p class="" dir="auto" id="3e76d563-4ee0-80fd-98f7-d86a4e5c96fd">The percentages are based on the 1,376 reviews in the main analysis.</p><p class="" dir="auto" id="3e76d563-4ee0-8059-93fc-ef479992b2f4">While reading and coding the reviews, I used different colors to mark words and sentences that seemed important. Some of these reviews described changes between scenes or said that time passed very quickly during the performance.</p><p class="" dir="auto" id="3e76d563-4ee0-80a3-85c8-d120e76aefda">Later, I chose search words from the expressions I had marked. I used Python to search all 1,376 reviews, and it found 74 possible matches. I then read these reviews again because the same word did not always have the same meaning.</p><p class="" dir="auto" id="3e76d563-4ee0-80fa-99e0-ce9563c82f2d">After checking them, I kept 40 reviews that clearly mentioned stage or scene transitions and 30 that described time passing quickly. Python helped me find the possible reviews, but it did not decide which reviews should be counted.</p><p class="" dir="auto" id="3e76d563-4ee0-807f-898a-d95052f85641">The search may have missed reviews that described the same experience with different words. These were also only small parts of the full dataset, so I treated them as additional observations rather than main results.</p><h3 class="" dir="auto" id="3e76d563-4ee0-809f-8502-c6c04810df90">E. Words connected to each category</h3><figure class="image" data-notion-image="Life%20of%20Pi%20Audience%20presence%20and%20perception/Figure_4_distinctive_keywords_by_presence_(2)_-_%EB%B3%B5%EC%82%AC%EB%B3%B8.png" dir="ltr" id="3e76d563-4ee0-80ca-aee8-fd7cf6ec1354"><img alt="" loading="lazy" src="../assets/img/life-of-pi-06.jpg" style="width:672px"/></figure><p class="" dir="auto" id="3e76d563-4ee0-8095-b0b1-fd5ac11e5f37"><strong> Words more common in reviews mentioning each presence category</strong></p><p class="" dir="auto" id="3e76d563-4ee0-8033-afee-c769c408f903">The bars show how many percentage points more often each word appeared compared with the full dataset.</p><p class="" dir="auto" id="3e76d563-4ee0-80ca-98b7-ff2af6d86beb">I used Kiwi, a Korean text analysis tool, to separate the review sentences into words. I counted each word only once in a review, even if the reviewer used it several times. I then compared the reviews in each presence category with the full dataset.</p><p class="" dir="auto" id="3e76d563-4ee0-80b6-8801-c62db51778fb">Reviews with human presence used words such as <em>acting</em>, <em>actor</em>, and <em>puppeteer</em> more often. Reviews with spatial presence used <em>stage</em>, <em>directing</em>, and <em>lighting</em> more often. Reviews with empathic presence used words such as <em>story</em>, <em>Pi</em>, <em>thought</em>, <em>belief</em>, and <em>emotion</em> more often.</p><p class="" dir="auto" id="3e76d563-4ee0-80a2-8172-f75a80058c3b">These words did not prove that my categories were correct. They came from the same reviews that I had already coded. Still, they helped me see some differences among the three groups.</p><h2 class="" dir="auto" id="3e76d563-4ee0-8050-9ef6-fbc47eaaf99a">6. What I learned</h2><p class="" dir="auto" id="3e76d563-4ee0-8090-a23f-f97d3f885eb0">Python and JASP were difficult for me, but they were not the hardest part. The hardest part was deciding how to turn a person’s review into data without losing too much of what the person meant. The final numbers look clear, but each number came from many decisions that were not always clear to me.</p><p class="" dir="auto" id="3e76d563-4ee0-80bb-bb93-d9941bf6be1d">When a review was difficult to classify, I sometimes used an AI tool to compare possible interpretations. It was not reliable enough to make coding decisions, so I checked the original review and applied the rules myself.</p><p class="" dir="auto" id="3e76d563-4ee0-809b-b978-f6993b4fffa5">When I changed one coding rule, I could not keep using all of my earlier work as it was. I had to return to the reviews and check them again. At first I thought consistency meant keeping the same rule. Later, I realized that I also needed to correct a rule when it was not working. </p><p class="" dir="auto" id="3e76d563-4ee0-8050-a04f-dbcb01872086">I also learned that an interesting pattern is not the same as a cause. The seating and repeat-attendance results gave me new questions, but they did not give me final answers about why audience members wrote differently.</p><p class="" dir="auto" id="3e76d563-4ee0-8036-be9b-c20b4fb2d7e6">The reviews were also not the same as the whole audience. Most reviews had high ratings, and people wrote only what they wanted to share. If someone did not mention one kind of presence, I could not assume that the person did not experience it.</p><p class="" dir="auto" id="3e76d563-4ee0-8049-b835-fc8d0f0038d9">I was the only person making the coding decisions, so another person might have made some choices differently. Seat and repeat-attendance information was available only when a reviewer wrote it. Because of this, I tried to keep my conclusions close to what the reviews actually showed. So I see these as patterns in reviews of this Korean production, rather than conclusions about theater audiences in general.</p><h2 class="" dir="auto" id="3ed6d563-4ee0-8072-87f4-c196ca2f3881">7. Research development log</h2><p class="" dir="auto" id="3ed6d563-4ee0-808d-9326-e6a7efd57530">At first, I did not mark every category that appeared in a review. I chose only the one that seemed most noticeable. This worked for short reviews, but it became difficult when a review talked about several parts of the performance.</p><p class="" dir="auto" id="3e76d563-4ee0-80d8-bc61-c9c2f17f4175">The log below shows how the project changed as I worked on it.</p><div class="collection-content" dir="ltr" id="3e76d563-4ee0-802c-a506-c82653516b45"><h4 class="collection-title">7. Research Development Log</h4><div class="collection-content-wrapper"><div class="table-wrap"><table class="collection-content"><colgroup><col style="width:100%"/></colgroup><thead><tr><th>Name</th></tr></thead><tbody><tr id="83149925-8f6c-4d19-8326-e794dec73866"><td class="cell-title"><a data-notion-page-id="83149925-8f6c-4d19-8326-e794dec73866" data-notion-space-id="4976d563-4ee0-8111-b5d4-000360696974" href="../log-1/">Log 1. Why I changed my first research idea</a></td></tr><tr id="3e76d563-4ee0-80d1-a3d5-ddd86092cd73"><td class="cell-title"><a data-notion-page-id="3e76d563-4ee0-80d1-a3d5-ddd86092cd73" data-notion-space-id="4976d563-4ee0-8111-b5d4-000360696974" href="../log-2/">Log 2. Making my first coding guide from theater notes</a></td></tr><tr id="3e76d563-4ee0-8038-abb2-c1a159adabae"><td class="cell-title"><a data-notion-page-id="3e76d563-4ee0-8038-abb2-c1a159adabae" data-notion-space-id="4976d563-4ee0-8111-b5d4-000360696974" href="../log-3/">Log 3. Collecting and cleaning the reviews</a></td></tr><tr id="3e76d563-4ee0-805e-b5b4-da625d725db5"><td class="cell-title"><a data-notion-page-id="3e76d563-4ee0-805e-b5b4-da625d725db5" data-notion-space-id="4976d563-4ee0-8111-b5d4-000360696974" href="../log-4/">Log 4. When the coding became more complicated</a></td></tr><tr id="3e76d563-4ee0-80ba-82fa-d5bae94dfdae"><td class="cell-title"><a data-notion-page-id="3e76d563-4ee0-80ba-82fa-d5bae94dfdae" data-notion-space-id="4976d563-4ee0-8111-b5d4-000360696974" href="../log-5/">Log 5. Making the final coding sheet</a></td></tr><tr id="3e76d563-4ee0-806c-9bf6-fd16cdcaa7e8"><td class="cell-title"><a data-notion-page-id="3e76d563-4ee0-806c-9bf6-fd16cdcaa7e8" data-notion-space-id="4976d563-4ee0-8111-b5d4-000360696974" href="../log-6/">Log 6. Checking unclear reviews again</a></td></tr><tr id="3e76d563-4ee0-80f6-bf13-d61e1eabc32b"><td class="cell-title"><a data-notion-page-id="3e76d563-4ee0-80f6-bf13-d61e1eabc32b" data-notion-space-id="4976d563-4ee0-8111-b5d4-000360696974" href="../log-7/">Log 7. Analyzing the data and checking my results</a></td></tr></tbody></table></div></div><br/><br/></div><h2 class="" dir="auto" id="3e76d563-4ee0-8033-a594-f76075bc5e65">8. Research materials</h2><p class="" dir="auto" id="3e76d563-4ee0-8005-846e-e704ff64f28d"><strong><a href="https://drive.google.com/file/d/1giIUZcUcwVjWurG9WPAxIeTLg6_bboi2/view?usp=sharing" rel="noopener" target="_blank">Full Research Report</a></strong><a href="https://drive.google.com/file/d/1giIUZcUcwVjWurG9WPAxIeTLg6_bboi2/view?usp=sharing" rel="noopener" target="_blank">  →</a></p><p class="" dir="auto" id="3ee6d563-4ee0-8085-be8a-f4fb623831bf"><strong><a href="https://colab.research.google.com/drive/1XlkJ-HSjU85tlDPLSaFB7tOjKxIhZt9K?usp=sharing" rel="noopener" target="_blank">Google Colab analysis </a></strong><a href="https://colab.research.google.com/drive/1XlkJ-HSjU85tlDPLSaFB7tOjKxIhZt9K?usp=sharing" rel="noopener" target="_blank">→</a></p><p class="" dir="auto" id="3e76d563-4ee0-8050-9304-dfc463b3894d"><strong>Status (October 2026):</strong> Research report completed · Paper in development<br/></p><p class="" dir="auto" id="3ed6d563-4ee0-8068-892b-df9e4b42b953">
+</p></div></article></main>
+<footer class="pagefoot"><span><a href="../theater-persona-cognition/">← Back to 5. Theater, Persona &amp; Cognition</a></span><span>Hwakyung Kang</span></footer>
+</body></html>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Hwakyung Kang">
+<title>6. Sports, Teamwork &amp; Well-being | THE H.K. PERCEPTION LAB</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%2337352f%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2741%27%20font-family%3D%27Helvetica%2CArial%2Csans-serif%27%20font-size%3D%2724%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%20text-anchor%3D%27middle%27%3EHK%3C/text%3E%3C/svg%3E">
+<style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+	/* Paint a complete callout box on every PDF page fragment. */
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+:root { --ink: rgb(55,53,47); --muted: rgba(55,53,47,0.62); --line: rgba(55,53,47,0.14); --bg: #fff; }
+html { background: var(--bg); }
+body { font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+       color: var(--ink); max-width: none !important; margin: 0 !important; padding: 0 !important; -webkit-font-smoothing: antialiased; }
+.topbar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+          border-bottom: 1px solid var(--line); font-size: 14px; }
+.topbar-inner { max-width: 820px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; }
+.topbar a { color: var(--muted); text-decoration: none; border-radius: 4px; padding: 2px 4px; }
+.topbar a:hover { background: rgba(55,53,47,0.07); color: var(--ink); }
+.topbar a.home { color: var(--ink); font-weight: 600; }
+.topbar .sep { color: rgba(55,53,47,0.3); }
+.topbar .here { color: var(--ink); padding: 2px 4px; }
+main { max-width: 820px; margin: 0 auto; padding: 48px 24px 96px; }
+article.page { max-width: none !important; margin: 0 !important; padding: 0 !important; }
+.page-title { font-size: 2.4rem; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 0.5em; }
+img { max-width: 100%; height: auto; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+a.quiet, a.quiet * { color: inherit; text-decoration: none !important; border-bottom: none !important; }
+a.quiet:hover strong { text-decoration: underline !important; text-decoration-color: rgba(55,53,47,0.4) !important; }
+details > summary { cursor: pointer; }
+.cover-meta { margin: -0.2em 0 1.6em; padding-bottom: 1em; border-bottom: 1px solid var(--line); }
+.cover-meta p { margin: 0; }
+.cover-meta .byline { font-size: 1.3rem; font-weight: 600; }
+.cover-meta .school { color: var(--muted); margin-top: 0.15em; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 1.2em 0 0.5em; }
+.card { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px 20px; border: 1px solid var(--line); border-radius: 8px;
+        color: var(--ink) !important; text-decoration: none !important; border-bottom: 1px solid var(--line) !important; background: #fff; transition: background .12s; }
+.card:hover { background: rgba(55,53,47,0.035); }
+.card-title { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+.card-desc { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+@media (max-width: 640px) { .gallery { grid-template-columns: 1fr; } }
+.pagefoot { max-width: 820px; margin: 0 auto; padding: 24px 24px 48px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.pagefoot a { color: var(--muted); }
+a:focus-visible, summary:focus-visible { outline: 2px solid #2383e2; outline-offset: 2px; border-radius: 3px; }
+@media (max-width: 640px) {
+  main { padding: 28px 18px 72px; }
+  .page-title { font-size: 1.8rem; }
+  .topbar-inner { padding: 8px 16px; }
+  .column-list { display: block !important; }
+  .column-list > .column { width: 100% !important; padding: 0 !important; }
+}
+</style></head>
+<body><nav class="topbar" aria-label="Breadcrumb"><div class="topbar-inner"><a class="home" href=".././">THE H.K. PERCEPTION LAB</a><span class="sep">/</span><span class="here">6. Sports, Teamwork &amp; Well-being</span></div></nav>
+<main><article class="page sans" id="3e66d563-4ee0-8068-be4e-f7edeedb2e02"><header><h1 class="page-title" dir="auto">6. Sports, Teamwork &amp; Well-being</h1><p class="page-description" dir="auto"></p><div class="table-wrap"><table class="properties"><tbody><tr class="property-row property-row-text"><th>Description</th><td>My soccer diary, what I learned from the bench, the LINE UP app I built for my team, and reflections on attention and connection.</td></tr></tbody></table></div></header><div class="page-body"><h2 class="" dir="auto" id="3ea6d563-4ee0-809b-b3b0-e0fda3e7be4a">1. Meaning from the bench: My soccer diary</h2><p class="" dir="auto" id="3ea6d563-4ee0-80cf-a8de-f3af58d22ed7">I began playing school soccer in tenth grade with little experience. I spent most games on the bench. When I returned to Girls’ Junior Varsity soccer in eleventh grade, I began keeping a diary after practices and games.</p><p class="" dir="auto" id="3ea6d563-4ee0-8025-ab40-caf17b22dd9f">The diary was not mainly a record of my statistics or athletic improvement. I used soccer to think about how I understood myself. Being on the bench made me ask whether an experience had meaning because of the result or because of how I chose to understand it. I also asked why I kept returning to a place where I often felt like a stranger.</p><p class="" dir="auto" id="3ea6d563-4ee0-802e-aa1c-ec31bfbfb869"><div class="indented"><details class="toggle" dir="auto" id="3ea6d563-4ee0-806e-8438-d26ec570d0f2"><summary><strong>Selected entries from my 2025 soccer diary</strong></summary><div class="indented"><h3 class="" dir="auto" id="3ea6d563-4ee0-80af-899a-c961e01063ca">September 20, 2025</h3><p class="" dir="auto" id="3ea6d563-4ee0-8057-bbf3-ca675034c7bd">I stayed on the bench during an away game at Worcester Academy. However, before the game, I succeeded in kicking the ball high. I had not been able to do that even at the end of my first soccer season.</p><p class="" dir="auto" id="3ea6d563-4ee0-80aa-89f4-fdd1442d044b">I had also begun helping the captain and team manager carry the team’s water. These were small things, but I felt that I was participating more, both athletically and socially. I began to add my own meaning to an activity that I had mostly endured the year before.</p><h3 class="" dir="auto" id="3ea6d563-4ee0-80aa-8633-eafe6acd9753">September 29, 2025</h3><p class="" dir="auto" id="3ea6d563-4ee0-80c3-8639-eb92d540346e">During a defensive drill, I stopped one ball by kicking it as quickly as I could. I compared it to moving one grain of sand in the Sahara Desert one millimeter to the left. The desert would still look the same, but a change had happened.</p><p class="" dir="auto" id="3ea6d563-4ee0-80f9-a762-dd5e497c4e83">I connected my return to soccer with Nietzsche’s idea of eternal recurrence. I had chosen the same activity again even though I had struggled during my first season. I wondered whether returning to the same difficulty meant being trapped in repetition or receiving another chance to respond differently.</p><h3 class="" dir="auto" id="3ea6d563-4ee0-8009-aec7-ccb41940ceba">October 1, 2025</h3><p class="" dir="auto" id="3ea6d563-4ee0-806a-8403-eae54eb47f69">We had a game against Pomfret Academy, but I did not play. Another player who, like me, did not usually get much playing time repeatedly asked the coach, “Can I play even for five minutes?”</p><p class="" dir="auto" id="3ea6d563-4ee0-8074-b5bf-e5ff03c8e2ad">I had wanted to say the same thing many times, but I had never been able to say it. I supported her when she entered the game. That day, I learned something from her courage rather than from playing.</p><h3 class="" dir="auto" id="3ea6d563-4ee0-80bb-b79f-fa1dc6519f35">October 4, 2025</h3><p class="" dir="auto" id="3ea6d563-4ee0-800b-949b-f57611587c21">I had usually played as a defender, but during this home game, I played as a midfielder for about five to seven minutes. Some teammates told me that I had played well.</p><p class="" dir="auto" id="3ea6d563-4ee0-80bc-9ead-d07a1b5f2674">I began to think that the position I had been given did not have to become my fixed identity. I wanted to ask the coach whether I could try playing as a midfielder again.</p><h3 class="" dir="auto" id="3ea6d563-4ee0-803e-bad1-c8074bf905fd">October 6, 2025</h3><p class="" dir="auto" id="3ea6d563-4ee0-800e-8036-f0a98e858e04">We practiced with the Boys’ JV Soccer team, and I did not defend or kick any balls. I wrote that even “nothing” could become part of the meaning I made from that day.</p><p class="" dir="auto" id="3ea6d563-4ee0-803d-b00f-de38fedda999">I also asked why Nietzsche emphasized overcoming oneself. Did I always have to overcome myself? What would happen if I could not become an <em>Übermensch</em>? I did not know exactly what I was trying to overcome within myself. Still, having something to struggle with made me feel alive.</p><h3 class="" dir="auto" id="3ea6d563-4ee0-8036-bd08-d1dec868d02c">October 9, 2025</h3><p class="" dir="auto" id="3ea6d563-4ee0-808e-9a77-f18c338efcad">During a practice drill, I did not understand the rule until the middle of the activity. It made me think about “otherness,” or my experience of feeling like a stranger.</p><p class="" dir="auto" id="3ea6d563-4ee0-80b3-84c8-ca10ad58bee2">In tenth grade, I had often sat on the bench worrying about my grades and my life while other players seemed comfortable running across the field. Still, I had chosen soccer again. I wondered whether choosing to return meant that I was not simply trapped in that feeling anymore.</p><h3 class="" dir="auto" id="3ea6d563-4ee0-80e5-a984-d1d095ddf95d">October 10, 2025</h3><p class="" dir="auto" id="3ea6d563-4ee0-807e-95df-e06ba795c284">During a shooting activity, I missed every shot. Later, when I became the goalkeeper, I blocked three balls. The same practice could be understood as either failure or progress.</p><p class="" dir="auto" id="3ea6d563-4ee0-8016-a96a-ffeb2c9422f5">This made me think about Buddhism and attachment. If freedom required letting go of attachment, could my constant effort to create meaning become another attachment? Or could creating a new meaning free me from one fixed interpretation of myself?</p><p class="" dir="auto" id="3ea6d563-4ee0-8082-9972-f18e5dc4bdde">I did not have an answer. I ended the entry by asking whether creating my own meaning was a kind of bondage or a way of valuing my humanity.</p><h3 class="" dir="auto" id="3ea6d563-4ee0-8020-b58a-e8cf83d2f266">October 11, 2025</h3><p class="" dir="auto" id="3ea6d563-4ee0-8089-81d5-d4953aa18c08">During a game against Austin Prep, I finally told the coach, “I want to play.” It was the first time I had directly asked to enter a game since joining the team in tenth grade.</p><p class="" dir="auto" id="3ea6d563-4ee0-80ed-8077-d0e4ae497f13">My shame and the fixed belief that I belonged on the bench had become a monarchy inside my own mind! By asking to play, I finally made a small declaration of independence from that self-made trap.</p><p class="" dir="auto" id="3ea6d563-4ee0-80d4-8dea-e92a1402492c">I played for only one minute, but saying the sentence mattered more to me than the length of time I played.</p></div></details></div></p><p class="" dir="auto" id="3ea6d563-4ee0-8074-beab-ebcb65076ded">These entries do not form one clear philosophy. I moved from Nietzsche to Buddhism and AP U.S. History because I was still trying to find words for what I felt. I keep these entries because they show how I thought at the time, not because I believe that every comparison was correct.</p><p class="" dir="auto" id="3ea6d563-4ee0-805c-b034-ee9588bf52b9">Soccer gave me a place where ideas about meaning, freedom, shame, and otherness became connected to my body and my relationships with other people. The bench was not only where I waited to play. It became a place where I watched myself and tried to understand why I kept returning.</p><figure class="image" data-notion-image="6%20Sports,%20Teamwork%20&amp;%20Well-being/KakaoTalk_20260929_211411411222.jpg" dir="ltr" id="3ea6d563-4ee0-80b5-a996-f86be8b0ff2e"><img alt="" loading="lazy" src="../assets/img/sports-teamwork-well-being-01.jpg" style="width:432px"/></figure><h2 class="" dir="auto" id="3ea6d563-4ee0-806b-b247-fe75bbb08605">2. LINE UP: Another way to take part</h2><p class="" dir="auto" id="3ea6d563-4ee0-80f6-8eea-ffad4168ce81">During the summer after eleventh grade, I began making LINE UP while planning to apply for a student team manager position. After spending two seasons mostly on the bench, I wanted to find another way to support the team even when I was not playing.</p><p class="" dir="auto" id="3ea6d563-4ee0-808b-828e-fb889616d359">In twelfth grade, the school offered fewer sports options and team spots. More students applied, and I was not selected as either a manager or a player. I was disappointed because I had expected to spend my final year with the team.</p><p class="" dir="auto" id="3ea6d563-4ee0-809b-9d98-cdf683af6daa">By that time, however, I had already built much of the app. I shared it with Mr. Brooks, the team coach, and some soccer players in my dorm.</p><p class="" dir="auto" id="3ea6d563-4ee0-805f-a7db-f1e88705890f">LINE UP allows players to sign in using a jersey number, complete a private mood check-in, follow a team stretch, send cheers, and take part in a weekly team mission. Players can also send messages to the coach without adding their names. The coach can read these messages without seeing which player sent them. I connected the app to a shared database so that check-ins and cheers from different phones could appear as team activity, while each player’s mood remained only on that person’s device.</p><p class="" dir="auto" id="3ea6d563-4ee0-80ea-a7bc-dfabe9d3c61b">I do not think an app can replace being on the field. However, making LINE UP gave me another way to think about participation. My soccer diary often asked what it meant to belong when my role was small. Building the app became one practical answer to that question.</p><p class="" dir="auto" id="3ea6d563-4ee0-8045-a5f5-e67b64865716"><strong><a href="https://hkperceptionlab.github.io/lineup-app/" rel="noopener" target="_blank">LINE UP App→</a></strong></p><p class="" dir="auto" id="3ea6d563-4ee0-80b8-aae5-e93047173220"><strong><a href="../computational-tools-app-building/">How I built LINE UP →</a></strong></p><p class="" dir="auto" id="3ea6d563-4ee0-8065-950a-dc105fd1d6f5">
+</p></div></article></main>
+<footer class="pagefoot"><span><a href=".././">← Back to home</a></span><span>Hwakyung Kang</span></footer>
+</body></html>

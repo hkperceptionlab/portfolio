@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Hwakyung Kang">
+<title>Global Mindfulness Hub | THE H.K. PERCEPTION LAB</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%2337352f%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2741%27%20font-family%3D%27Helvetica%2CArial%2Csans-serif%27%20font-size%3D%2724%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%20text-anchor%3D%27middle%27%3EHK%3C/text%3E%3C/svg%3E">
+<style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+	/* Paint a complete callout box on every PDF page fragment. */
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+:root { --ink: rgb(55,53,47); --muted: rgba(55,53,47,0.62); --line: rgba(55,53,47,0.14); --bg: #fff; }
+html { background: var(--bg); }
+body { font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+       color: var(--ink); max-width: none !important; margin: 0 !important; padding: 0 !important; -webkit-font-smoothing: antialiased; }
+.topbar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+          border-bottom: 1px solid var(--line); font-size: 14px; }
+.topbar-inner { max-width: 820px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; }
+.topbar a { color: var(--muted); text-decoration: none; border-radius: 4px; padding: 2px 4px; }
+.topbar a:hover { background: rgba(55,53,47,0.07); color: var(--ink); }
+.topbar a.home { color: var(--ink); font-weight: 600; }
+.topbar .sep { color: rgba(55,53,47,0.3); }
+.topbar .here { color: var(--ink); padding: 2px 4px; }
+main { max-width: 820px; margin: 0 auto; padding: 48px 24px 96px; }
+article.page { max-width: none !important; margin: 0 !important; padding: 0 !important; }
+.page-title { font-size: 2.4rem; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 0.5em; }
+img { max-width: 100%; height: auto; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+a.quiet, a.quiet * { color: inherit; text-decoration: none !important; border-bottom: none !important; }
+a.quiet:hover strong { text-decoration: underline !important; text-decoration-color: rgba(55,53,47,0.4) !important; }
+details > summary { cursor: pointer; }
+.cover-meta { margin: -0.2em 0 1.6em; padding-bottom: 1em; border-bottom: 1px solid var(--line); }
+.cover-meta p { margin: 0; }
+.cover-meta .byline { font-size: 1.3rem; font-weight: 600; }
+.cover-meta .school { color: var(--muted); margin-top: 0.15em; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 1.2em 0 0.5em; }
+.card { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px 20px; border: 1px solid var(--line); border-radius: 8px;
+        color: var(--ink) !important; text-decoration: none !important; border-bottom: 1px solid var(--line) !important; background: #fff; transition: background .12s; }
+.card:hover { background: rgba(55,53,47,0.035); }
+.card-title { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+.card-desc { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+@media (max-width: 640px) { .gallery { grid-template-columns: 1fr; } }
+.pagefoot { max-width: 820px; margin: 0 auto; padding: 24px 24px 48px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.pagefoot a { color: var(--muted); }
+a:focus-visible, summary:focus-visible { outline: 2px solid #2383e2; outline-offset: 2px; border-radius: 3px; }
+@media (max-width: 640px) {
+  main { padding: 28px 18px 72px; }
+  .page-title { font-size: 1.8rem; }
+  .topbar-inner { padding: 8px 16px; }
+  .column-list { display: block !important; }
+  .column-list > .column { width: 100% !important; padding: 0 !important; }
+}
+</style></head>
+<body><nav class="topbar" aria-label="Breadcrumb"><div class="topbar-inner"><a class="home" href=".././">THE H.K. PERCEPTION LAB</a><span class="sep">/</span><a href="../cognition-in-practice/">4. Cognition in Practice</a><span class="sep">/</span><span class="here">Global Mindfulness Hub</span></div></nav>
+<main><article class="page sans" id="3e86d563-4ee0-80d0-be45-e0da5b21244f"><header><h1 class="page-title" dir="auto">Global Mindfulness Hub</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><p class="" dir="auto" id="3e86d563-4ee0-8022-85b8-fc4a602fd929"><em>An ongoing student website that brings together mindfulness practices, art, language, and reflection.</em></p><p class="" dir="auto" id="3e86d563-4ee0-8099-beef-f1c341ef81b2"><strong>Status:</strong> The first full version was completed in August 2026. I am still receiving feedback and making changes.</p><p class="" dir="auto" id="3ee6d563-4ee0-8050-bc19-ff1533bdd668"><strong>My role:</strong> I planned and organized the website, selected and revised the content, designed and built the four interactive mindfulness apps, managed the language versions, and collected feedback.</p><p class="" dir="auto" id="3e86d563-4ee0-80d9-a05f-e4fe2cc46d5b"><strong>Website:</strong> <strong><a href="https://sites.google.com/view/gmh-hkhk/home" rel="noopener" target="_blank">Global Mindfulness Hub</a></strong><a href="https://sites.google.com/view/gmh-hkhk/home" rel="noopener" target="_blank">→ </a></p><p class="" dir="auto" id="3eb6d563-4ee0-80c3-8665-c06e8ab729f2">
+</p><figure class="image" data-notion-image="Global%20Mindfulness%20Hub/816859e8-008c-469d-95c1-9ec66e3a06cc.png" dir="ltr" id="3eb6d563-4ee0-802b-8040-e197b8c9fdc3"><img alt="" loading="lazy" src="../assets/img/global-mindfulness-hub-01.jpg" style="width:528px"/></figure><h2 class="" dir="auto" id="3e86d563-4ee0-8066-bbc2-dc6c05bfadf5">1. The beginning</h2><p class="" dir="auto" id="3e86d563-4ee0-80e2-bb3b-fe20e0045dc4">When I was in 10th grade, I first wanted to make a simple emotion journal that people of any age could use on their phones. I did not know how to make an app, so I began learning through GPTers, an online community where I tried simple AI-assisted app building.</p><p class="" dir="auto" id="3e86d563-4ee0-802f-ace3-eecb50fc6b5d">As I explored different tools, I found that Google Sites was the easiest for me to begin using. Around that time, my idea also started to change. Instead of making only an emotion journal, I wanted one place where I could collect things I was learning or thinking about. I began adding mindfulness practices, literature, art, language, and small interactive activities.</p><p class="" dir="auto" id="3e86d563-4ee0-8098-b4af-f70c84d5a705">The project became much larger than my first idea. I wanted to try many things, so the website slowly became a kind of personal space for experimenting with my interests.</p><figure class="image" data-notion-image="Global%20Mindfulness%20Hub/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(3826).png" dir="ltr" id="3e86d563-4ee0-8005-887c-f110991dfb93"><img alt="" loading="lazy" src="../assets/img/global-mindfulness-hub-02.jpg" style="width:624px"/><figcaption><em>An early Google Sites editing screen. I first built the structure for the Adults section and then copied parts of it to begin the Youth section. At this stage, I was still testing sections that I later changed or removed.</em></figcaption></figure><h2 class="" dir="auto" id="3e86d563-4ee0-8084-9850-e4ae15d931d1">2. Adults and Youth</h2><p class="" dir="auto" id="3e86d563-4ee0-807b-8334-c65470cc990b">I did not divide the website into Adults and Youth only because of age. I was thinking about two people in my family.</p><p class="" dir="auto" id="3e86d563-4ee0-801e-bed9-c6626a9e28eb">For the Youth section, I especially thought about my younger brother. He was living under a lot of academic pressure in Korea and spent much of his free time on his phone. However, he also loved language. He read books such as <em>The Divine Comedy</em> and <em>The Republic</em>, wrote poems, and listened closely to hip-hop lyrics.</p><p class="" dir="auto" id="3e86d563-4ee0-809c-8667-dfb462027966">When I returned to Korea during vacation, I brought him a CD by a musician he liked. We listened to the music together and talked about the lyrics. I also asked my literature teacher to recommend books for him. My teacher wrote out a list by hand, and I brought it home and gave it to my brother. Since I could not be with my brother during most of the school year, I wanted to make something he could sometimes explore by himself on his phone. I also did not want the Youth section to feel childish.</p><figure class="image" data-notion-image="Global%20Mindfulness%20Hub/KakaoTalk_20260927_234759958.jpg" dir="ltr" id="3e86d563-4ee0-8004-b36b-fb39e5b7520b"><img alt="" loading="lazy" src="../assets/img/global-mindfulness-hub-03.jpg" style="width:576px"/><figcaption><em>A Kendrick Lamar CD I brought home for my brother and a book list handwritten by my literature teacher. Music and reading became some of the ways I tried to connect with him during vacation.</em></figcaption></figure><p class="" dir="auto" id="3e86d563-4ee0-8086-b433-df5e1793abbd">For the Adults section, I thought about my grandmother. She lives in the countryside and no longer works on the farm. She often waits for calls from her children. I hoped the website might give her something quiet to read or try.</p><p class="" dir="auto" id="3e86d563-4ee0-8089-9612-dd554ccca5f3">However, after making the website, I realized that some of the text might be too small and the structure might be too complicated for her. I learned that making a section for adults did not automatically make it easy for older adults to use. Larger text and simpler navigation are things I still need to consider.</p><div class="column-list" data-notion-column-list="" dir="auto" id="3eb6d563-4ee0-804a-9346-ccfea7fcdc0f"><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3eb6d563-4ee0-80eb-a6a8-d303619e33d2" style="width:50%"><figure class="image" data-notion-image="Global%20Mindfulness%20Hub/e32642d8-6ee2-49d8-8efa-71a213303dbf.png" dir="ltr" id="3eb6d563-4ee0-806f-991c-e6231278f552"><img alt="" loading="lazy" src="../assets/img/global-mindfulness-hub-04.jpg" style="width:336px"/></figure></div><div class="column" data-notion-column-ratio="0.5" dir="auto" id="3eb6d563-4ee0-809b-9641-cef04343aa4f" style="width:50%"><figure class="image" data-notion-image="Global%20Mindfulness%20Hub/08dd31f3-61fd-4cb5-b7ca-655b77ee2670.png" dir="ltr" id="3eb6d563-4ee0-80de-933d-d11e08cc9a7e"><img alt="" loading="lazy" src="../assets/img/global-mindfulness-hub-05.jpg" style="width:384px"/></figure></div></div><p class="" dir="auto" id="3e86d563-4ee0-80bd-b773-d4000fab07c5"><em>The Adults (left) and Youth (right) starting pages. They use the same basic structure, but some content is different.</em></p><h2 class="" dir="auto" id="3e86d563-4ee0-80c1-b250-edb4e81a6826">3. What I put on the website</h2><p class="" dir="auto" id="3e96d563-4ee0-80c5-a01d-db8891b4df14">Both the Adults and Youth sections have three main sections: Wisdom &amp; Art, Practice, and Mindfulness Apps. I used the same basic structure so that it would be easier to move through the website. However, the content is not completely the same. I tried to change the language, examples, and some activities for each group, although several parts still overlap.</p><p class="" dir="auto" id="3e86d563-4ee0-8064-9f4e-fffbbff73c94"><strong>Wisdom &amp; Art</strong></p><p class="" dir="auto" id="3eb6d563-4ee0-80c8-bc4c-f4fce6a8bca4">I was worried that a website only about mindfulness might feel repetitive. I added literature, quotations, and art so that visitors could approach mindfulness in another way. I divided this section into six themes, including uncertainty, relationships, courage, letting go, perspective, and stillness.</p><p class="" dir="auto" id="3eb6d563-4ee0-8082-9429-fb795d2edcec">In the Youth section especially, I included writings connected to Alexander Hamilton, whom I have been interested in for a long time, and literary works that I first read in class. I thought that some teenagers, including my brother, might connect more easily with history, stories, or poems than with direct advice about mindfulness. I wanted to share some of the words that had stayed with me and see how they might feel when placed beside art and mindfulness.</p><p class="" dir="auto" id="3eb6d563-4ee0-80a0-a4cf-f39f8cc7df8c">Making this section also helped me. I found online art collections that I had not known before, and I began visiting some of them again on my own. Even familiar quotations sometimes felt different when I placed them beside an image or another text.</p><p class="" dir="auto" id="3ea6d563-4ee0-80b4-b59b-d4cc6710666a"><strong>Practice</strong></p><p class="" dir="auto" id="3eb6d563-4ee0-800f-a318-d302deebc7a7">This section contains 52 short meditation and mindfulness practices. I made an HTML page where visitors can choose a language, filter the practices by theme, and select an activity.</p><p class="" dir="auto" id="3eb6d563-4ee0-8026-ab70-d3e9cf80496f">Many of the practices began with ordinary moments I remembered, such as noticing fresh green leaves while riding a bicycle, walking beside a stream after rain, or putting my feet in cold water during summer. Each practice followed a similar structure: a short note on its background, an introduction, a script that someone could follow, and a closing sentence.</p><p class="" dir="auto" id="3eb6d563-4ee0-80a8-91e5-f85734ea11f7">Some practices are shared by Adults and Youth, while others are different. When a practice focused mainly on breathing, the body, or the senses, I kept the main activity similar because the process did not change with age. When daily life mattered more, I changed the examples and wording. For example, the Youth version of one cloud practice refers to school and test worries, while the Adults version refers to unfinished work and responsibilities. I had originally hoped to make more of the two versions different, but I did not have enough time to rewrite every practice.</p><p class="" dir="auto" id="3eb6d563-4ee0-8047-8f67-ca0b0b40f426">The idea for this section partly came from Christopher Willard’s book <em>Growing Up Mindful</em>. While reading it, I noticed short mindfulness prompts written for children and teenagers. They made me think about how a few carefully chosen sentences could help someone begin a small practice without reading a long explanation.</p><p class="" dir="auto" id="3eb6d563-4ee0-8017-be5f-f0188ed93639">For practices connected to established methods, such as body scans, grounding, cognitive defusion, or progressive muscle relaxation, I checked their backgrounds and recorded a brief source. The final scripts were written for this project rather than copied directly from an app or book.</p><p class="" dir="auto" id="3eb6d563-4ee0-8006-a8bc-ca65c20a194b">The Practice scripts for both Adults and Youth were developed with extensive help from the poet Iran and the lyricist Jae-sung Lee, especially in shaping their structure, rhythm, and wording. I brought the topics, personal experiences, and early ideas, and continued revising and organizing the scripts with their help. They also gave me feedback on parts of the Wisdom &amp; Art section.</p><figure class="image" data-notion-image="Global%20Mindfulness%20Hub/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(6459)1.png" dir="ltr" id="3e86d563-4ee0-8084-a7f4-d8947fa6a3fe"><img alt="" loading="lazy" src="../assets/img/global-mindfulness-hub-06.jpg" style="width:432px"/><figcaption><em>The Practice page includes 52 activities. Visitors can choose one of four languages and filter the cards by themes such as nature, emotion, sleep, and breath.</em></figcaption></figure><p class="" dir="auto" id="3e86d563-4ee0-80cc-9630-d05b28e8eafc"><strong>Mindfulness Apps</strong></p><p class="" dir="auto" id="3eb6d563-4ee0-80db-9cf6-f85d8aae0a04">The Hub includes four small interactive mindfulness activities: Breath Counting, Body Scan, Lotus, and Quiet Time. I built the apps using Claude Code. I chose the activities, tested each version, and decided how to organize and present them on the website.</p><p class="" dir="auto" id="3eb6d563-4ee0-80da-bd35-eb42b913f70d">The apps do not give scores or measure a person’s ability. They are simple ways to pause and practice for a few minutes. I did not design them to collect names, email addresses, or other personal information.</p><figure class="image" data-notion-image="Global%20Mindfulness%20Hub/ef3234cc-9ddf-4a81-8f0f-e57a5d7c90c6.png" dir="ltr" id="3eb6d563-4ee0-8055-8997-e7e36f3e0635"><img alt="" loading="lazy" src="../assets/img/global-mindfulness-hub-07.png" style="width:576px"/></figure><h2 class="" dir="auto" id="3e86d563-4ee0-80bf-a51b-d6b14f32fbd7">4. Four language versions</h2><p class="" dir="auto" id="3e86d563-4ee0-804b-8f41-d8973edb3f70">I wanted the Hub to be available to people with different language backgrounds. I used English as the main language and also made Korean, Simplified Chinese, and Spanish versions.</p><p class="" dir="auto" id="3e86d563-4ee0-807b-8c15-ccde551cd4db">I worked on the English and Korean content and used AI translation tools to help make the Chinese and Spanish versions. I checked the translations several times by comparing different versions and asking for feedback. However, I do not speak Chinese or Spanish well enough to confirm every sentence by myself. These versions still need another review by fluent speakers.</p><p class="" dir="auto" id="3e86d563-4ee0-80eb-8ec1-d50c6bdd5913">I also included a Traditional Chinese version for a time. I later removed it after receiving feedback because keeping another full version accurate and consistent was more difficult than I expected.</p><p class="" dir="auto" id="3e86d563-4ee0-80eb-8438-c3c1196ee3f3">While translating, I noticed that two sentences could have almost the same meaning but still feel different. A sentence could become more formal, lose part of its tone, or communicate a slightly different feeling. I began the translations because I wanted the website to feel global, but the process showed me that adding another language was much easier than carrying the same meaning and feeling into it.</p><h2 class="" dir="auto" id="3e86d563-4ee0-809d-86e3-d6d0f2ff6c6d">5. Changes and problems</h2><p class="" dir="auto" id="3eb6d563-4ee0-80e7-a3bb-d7788750a14f">Not every idea worked in the way I expected.</p><p class="" dir="auto" id="3eb6d563-4ee0-80ae-83f0-e63477b427e4">I made a Network section for both Adults and Youth. I connected it to Padlet because I wanted visitors to write something directly and let other visitors see it. However, I could not make it work well inside the website. I removed the section instead of leaving something that did not work properly.</p><p class="" dir="auto" id="3eb6d563-4ee0-80b4-bea3-efa99e5dec5d">I also made two feedback forms. One asks about the website, and the other asks about the four mindfulness apps. I originally placed the website form in the About section and the app form in the Mindfulness Apps section. Later, I learned that some people could not find them easily. For now, I have also placed feedback buttons on the Home page. I added an email link from the beginning for anyone who wanted to write a longer comment.</p><p class="" dir="auto" id="3eb6d563-4ee0-800b-8a7f-db04e0d79469">The visual design changed many times. I changed pictures, text sizes, and the way pages were arranged. I tried to add more background colors, but I could not make them work in the way I wanted with Google Sites. Some design ideas remained unfinished.</p><p class="" dir="auto" id="3eb6d563-4ee0-8016-86b2-d13f6a70f919">I wanted to add meditation music from YouTube. I also added a singing-bowl sound for a short time. However, I did not own the recordings, and I could not clearly confirm that I had the right to use them. I was not able to buy and record my own singing bowl either. I removed the sounds instead of using recordings with unclear permission.</p><p class="" dir="auto" id="3eb6d563-4ee0-8005-abc7-d8e4887510dd">I used many nature images because I wanted the website to feel quiet and open. However, I learned that a picture of nature still has a creator and can still have copyright. I had to think about the source of the image, not only what was shown in it. I checked the sources of the images and replaced them when I could not confirm that I could use them.</p><p class="" dir="auto" id="3ee6d563-4ee0-8014-9512-d19bc34477bf">I decided that the interactive part of the Hub should remain small and focused. I kept four mindfulness apps that fit its main purpose.</p><p class="" dir="auto" id="3eb6d563-4ee0-8046-945e-fef5478fecd6">There were also smaller technical problems. Some links led to an error page, and some layouts did not look the same on different screens. A page working on my computer did not always mean that it would be easy for another person to use. I had to open links again, test pages, and make changes several times.</p><h2 class="" dir="auto" id="3e86d563-4ee0-80b0-a1b5-d9bfec1b041e">6. Feedback</h2><p class="" dir="auto" id="3eb6d563-4ee0-80ff-b0ff-f2325419933d">The first idea for the Hub came earlier, but I actively worked on the website for about a year. Progress was often slow because I was building it while also doing schoolwork and other activities. I completed the first full version near the end of August 2026.</p><p class="" dir="auto" id="3eb6d563-4ee0-80b5-a664-f0b605f2aa4b">I did not share the website widely while many sections were still unfinished. After completing the first version, I began sending the link to teachers and people I knew. I am now collecting feedback and using it to make additions and corrections.</p><p class="" dir="auto" id="3eb6d563-4ee0-802d-beaf-df4afee017a8">I made two short feedback forms. One asks about the website, and the other asks about the mindfulness apps. I first placed the website form in the About section and the app form in Mindfulness Apps section. However, some people did not find them easily. For now, I have also placed buttons for both forms on the Home page. The forms do not ask for names or email addresses.</p><p class="" dir="auto" id="3eb6d563-4ee0-8084-8c73-cb92b226955a">Both forms are still open, and I am continuing to receive responses. As of October 2026, 28 people had answered the website feedback form and 26 had answered the app feedback form. These are not final results. I am using the responses to find problems and decide what I should change.</p><p class="" dir="auto" id="3eb6d563-4ee0-80c2-88d7-e3c24e57d6bf">The responses were generally positive, but they also showed several problems. Some people wanted a clearer language selector and simpler navigation. Others said that the website had too much content or that some explanations were too abstract. For the apps, several people wanted clearer explanations of their purpose and instructions. One person also reported a problem opening an app on a phone.</p><p class="" dir="auto" id="3eb6d563-4ee0-809a-8c81-c2ae1666cad5">My younger brother, who was one of the people I had in mind when I made the Youth section, also gave me many comments. He shared the website with some of his friends, and my mother told me that he often visited it on his own. I was glad about this because I had originally hoped to make something that he might actually choose to look at on his phone.</p><p class="" dir="auto" id="3eb6d563-4ee0-80fa-b55b-f6ec0963025b">I also showed the website to a Korean Buddhist monk who is a qualified meditation instructor. He said that if I wanted to make a mindfulness website for the general public, it would be better to reduce the amount of content and make it easier to read. His comments were similar to what several people who responded to the forms had said.</p><p class="" dir="auto" id="3eb6d563-4ee0-8058-b029-f2e74524f7e0">These comments were useful because some problems were difficult for me to notice after looking at the website for so long. While making it, I often focused on whether I could add a new page, activity, or function. I did not always think enough about how a first-time visitor would understand or use it. This feedback helped me focus more on simplifying the website and explaining the four mindfulness apps clearly.</p><p class="" dir="auto" id="3eb6d563-4ee0-8061-a27b-e0f6d7b9502f">Christopher Willard’s books, talks, and website were important influences when I began this project. I linked his book and website in the About section of the Hub. After completing the first full version, I contacted him and shared what I had made. He responded positively. He said that the website looked good and that he hoped it could be useful to students. I was glad that I could show the project to someone whose work had helped me begin it.</p><h2 class="" dir="auto" id="3e86d563-4ee0-8004-a4c3-f017985422df">7. What I learned</h2><p class="" dir="auto" id="3eb6d563-4ee0-80ba-8e61-f92af3bd3d85">As I worked on the website, I kept wanting to add more things. Mindfulness led me to art, literature, language, and interactive activities. Looking back, I think I became too ambitious. I spent much of my time asking whether I could make each idea work, but I did not always think enough about what a visitor would actually need.</p><p class="" dir="auto" id="3eb6d563-4ee0-80ae-b916-d3f8129507b5">Writing for Adults and Youth was also more difficult than I expected. I could not simply give both groups the same sentences. I had to think about which words might feel natural, which expressions might reach them, and whether the tone sounded too serious or too childish. Even when the main idea was the same, the way I approached the reader needed to be different.</p><p class="" dir="auto" id="3eb6d563-4ee0-801d-b704-fdda3a726e96">Translation made this problem even clearer. Words with similar meanings did not always create the same feeling in another language. I learned that communication is not only about making sure that the meaning is correct. The tone and feeling of the words also matter.</p><p class="" dir="auto" id="3ee6d563-4ee0-80eb-a516-d338d41866d3">The interactive activities taught me another lesson. I realized that adding more features did not necessarily make the Hub more useful. Each activity needed to fit the purpose of the website and be easy for a visitor to understand. This was not only a technical decision. It was a decision about what the website should be for.</p><p class="" dir="auto" id="3eb6d563-4ee0-80bf-b6ec-de7acaef8464">The first response from people around me was quieter than I had expected. I had spent a long time making the Hub, so I felt disappointed at first. However, their responses helped me understand that the website had become much larger and more serious than a person might expect from a mindfulness website. Someone looking for one short and simple activity might not know where to begin.</p><p class="" dir="auto" id="3eb6d563-4ee0-8097-9da8-c1fa3e63335c">Before this project, I used websites and apps without thinking much about why a button was in one place, why a sentence was short, or why one picture was chosen. Now I notice these details more. The words, colors, pictures, text size, links, and order of pages all affect how a person understands and uses something. What looks simple on a finished website may have required many decisions.</p><p class="" dir="auto" id="3eb6d563-4ee0-805f-9b6f-c85537fac986">I still cannot code everything by myself, but making the Hub made me less afraid of trying an unfamiliar tool, finding a problem, and asking for help. The website became a small personal space where I could connect mindfulness, art, literature, language, and technology.</p><p class="" dir="auto" id="3eb6d563-4ee0-804b-bd8f-f3d43d649533">The first version was larger than it needed to be, but I do not think that work was meaningless. It showed me my interests and my limits. Now I want to keep making the Hub clearer, lighter, and easier for another person to use.</p><p class="" dir="auto" id="3ee6d563-4ee0-8020-861c-ce798ca266ac">
+</p><details class="toggle" dir="auto" id="3e96d563-4ee0-801f-93df-de4d325a1cb4"><summary><strong>How the project changed</strong></summary><div class="indented"><p class="" dir="auto" id="3e96d563-4ee0-8050-a811-ce108112c556">I made this timeline later by looking at my saved drafts, file dates, screenshots, and the changes that remained on the website.</p><p class="" dir="auto" id="3eb6d563-4ee0-80d9-a894-ff5ed0b4ed51"><br/><strong>Summer between 10th and 11th grade — A small first idea</strong></p><p class="" dir="auto" id="3eb6d563-4ee0-804e-8fbc-c3a0be470591">My first idea was a simple emotion journal that people could use on a phone. During the following fall, I moved the idea to Google Sites and began adding more subjects.</p><p class="" dir="auto" id="3eb6d563-4ee0-80f0-93f8-ff1a8cdc6bd6"><strong>11th-grade fall to June 2026 — Building the main content</strong></p><p class="" dir="auto" id="3eb6d563-4ee0-80d9-81cf-e997c4f134f1">During this period, I spent much of my time making the content that later became the Practice and Wisdom &amp; Art sections.</p><p class="" dir="auto" id="3eb6d563-4ee0-8028-959c-cd3ff8f3339e">For Practice, I collected ideas for short mindfulness activities and worked on how each one should begin, continue, and end. I showed some of the writing to other people and revised the wording after receiving feedback. It took time to make a practice short without making it feel empty or too general.</p><p class="" dir="auto" id="3eb6d563-4ee0-804f-9c2a-cbc5fdf6c8c6">For Wisdom &amp; Art, I looked through quotations, literary works, historical writing, and art. I had to choose which words fit each theme instead of adding everything I liked. I also began separating material that might speak more naturally to adults from material that might interest teenagers.</p><p class="" dir="auto" id="3eb6d563-4ee0-80e6-927f-eb74d5f3aeaa">Translation took a large part of this period. I first worked on the meaning in English and Korean and then used translation tools to help make the other language versions. I compared different translations and revised sentences when the meaning was correct but the tone felt different. One short passage could take a long time because a change in one language also had to be checked in the others.</p><p class="" dir="auto" id="3eb6d563-4ee0-80ab-adbc-d1b1c96194c6">I tried to pay attention to copyright throughout this work. I kept quotations short, wrote down the writer and source, and linked to the original source when possible. I also checked where images, music, and other materials came from. When I could not clearly confirm that I had permission to use something, I did not use it or removed it later.</p><p class="" dir="auto" id="3eb6d563-4ee0-8016-afb5-c2766088c782"><strong>July 2026 — Too many ideas</strong></p><p class="" dir="auto" id="3eb6d563-4ee0-8051-8366-e1a3e7c2e8ea">My early planning files had long lists of possible tools for teenagers and older adults. They included ideas about focus, phone use, memory, medication reminders, fall detection, and voice messages.</p><p class="" dir="auto" id="3eb6d563-4ee0-80ed-b92e-fa76640e3a06">The list became larger very quickly. At first, I treated almost every interesting idea as something I should try to build. Later, I began asking whether a website could actually use the idea safely and whether it belonged in a mindfulness project.</p><p class="" dir="auto" id="3eb6d563-4ee0-8067-a3e3-c2e4aa62f065">I removed ideas such as fall detection, medication reminders, and dementia screening. If one of these tools failed, it could give someone false confidence or make the website look like a medical service.</p><p class="" dir="auto" id="3eb6d563-4ee0-80a8-8cba-de311d5ab515">I also stopped working on a voice-message idea. It could ask someone about grief, family problems, or something they regretted, but there would be no real person there to respond. Saving an important recording also created privacy and reliability problems. I realized that an app could ask a serious question without being able to care for the person who answered it.</p><p class="" dir="auto" id="3eb6d563-4ee0-8034-a2c6-d90480c0cb83">Removing these ideas was part of making the project. I began to understand that deciding not to build something could be as important as building it.</p><p class="" dir="auto" id="3eb6d563-4ee0-806d-9cfe-c222cd735eea"><strong>Late July and August 2026 — Choosing four mindfulness apps</strong></p><p class="" dir="auto" id="3eb6d563-4ee0-80ed-a1b8-ebb3fc4c0903">I originally experimented with many interactive ideas. Some were closer to small demonstrations of attention, memory, or visual perception. They made the website larger, and they did not fit the main purpose of the Hub clearly.</p><p class="" dir="auto" id="3eb6d563-4ee0-8033-8313-e7b43a323fba">I decided to keep four simple activities instead: Breath Counting, Body Scan, Lotus, and Quiet Time. They do not give a brain age, score, ranking, or comparison with a normal range. They are short practices for pausing and noticing the present moment.</p><p class="" dir="auto" id="3eb6d563-4ee0-8025-afff-e005c68c1a0f">On July 24, I saved an HTML version of the Practice cards with language and category choices. During August, I worked on the practice guides, app instructions, translations, and separate Adults and Youth content.</p><p class="" dir="auto" id="3eb6d563-4ee0-808e-9bde-c1359450698b">I made many files with words such as “final” in their names, but I often changed them again. When I changed the tone for teenagers or corrected a guide, I also had to check the other language versions. I learned that finishing one page could create work in several other places.</p><p class="" dir="auto" id="3eb6d563-4ee0-8077-b92f-cb96f29d22d0"><strong>Late August and September 2026 — A lighter first version</strong></p><p class="" dir="auto" id="3eb6d563-4ee0-8002-9f9d-c395bec30503">Near the end of August, the main parts of the website were finally connected. The site included the Adults and Youth areas, 52 Practice activities, Wisdom &amp; Art content, and four mindfulness apps.</p><p class="" dir="auto" id="3eb6d563-4ee0-80e9-9877-effccb4eadd8">I called this the first full version rather than the final version. After sharing it with teachers and other people, I learned that the website needed simpler navigation, clearer language choices, and less content for a first-time visitor.</p><p class="" dir="auto" id="3eb6d563-4ee0-80d5-a95c-fc44c0b86f9a">My next step is not to keep adding more pages. I want to revise what is already there, make the four mindfulness apps easier to understand and use, and keep the Hub lighter for visitors.</p><p class="" dir="auto" id="3eb6d563-4ee0-8043-be18-f3823fb622f8">
+</p></div></details></div></article></main>
+<footer class="pagefoot"><span><a href="../cognition-in-practice/">← Back to 4. Cognition in Practice</a></span><span>Hwakyung Kang</span></footer>
+</body></html>

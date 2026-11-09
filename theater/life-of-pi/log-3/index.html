@@ -1,28 +1,4 @@
-<html><head>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<style>
-body{margin:0!important;padding:0!important;max-width:none!important;background:#fff}
-article.page{max-width:900px;margin:0 auto!important;padding:24px 22px 96px!important}
-nav.crumbs,footer.site{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif}
-nav.crumbs{max-width:900px;margin:0 auto;padding:18px 22px 0;font-size:14px;line-height:1.6;color:rgba(55,53,47,.65)}
-nav.crumbs a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(55,53,47,.2)}
-nav.crumbs a:hover{color:#37352f}
-nav.crumbs span.sep{margin:0 6px;opacity:.5}
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:12px 0 20px}
-.gallery a.card{display:block;border:1px solid rgba(55,53,47,.16);border-radius:6px;padding:16px 18px;color:#37352f;text-decoration:none;background:#fff}
-.gallery a.card:hover{background:rgba(55,53,47,.03)}
-.gallery a.card:focus-visible,.loglist a:focus-visible,nav.crumbs a:focus-visible{outline:2px solid #2383e2;outline-offset:2px}
-.gallery .card-title{font-weight:600;font-size:1.05rem;line-height:1.35;margin-bottom:8px}
-.gallery .card-desc{font-size:.9rem;line-height:1.5;color:rgba(55,53,47,.8)}
-.loglist{margin:8px 0 20px;padding:0;list-style:none}
-.loglist li{list-style:none;border-bottom:1px solid rgba(55,53,47,.09)}
-.loglist a{display:block;padding:9px 4px;color:#37352f;text-decoration:none;font-weight:500}
-.loglist a:hover{background:rgba(55,53,47,.04)}
-details.toggle > summary{cursor:pointer}
-footer.site{max-width:900px;margin:0 auto;padding:24px 22px 40px;font-size:13px;color:rgba(55,53,47,.55);border-top:1px solid rgba(55,53,47,.09)}
-@media (max-width:640px){.gallery{grid-template-columns:1fr}.column-list{flex-direction:column;gap:0}}
-</style>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><title>Log 3. Collecting and cleaning the reviews</title><style>
+<html><head><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><title>Log 3. Collecting and cleaning the reviews</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -818,5 +794,20 @@ blockquote.quote-large {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><nav aria-label="Breadcrumb" class="crumbs"><a href="../../../index.html">THE H.K. PERCEPTION LAB</a><span class="sep">/</span><a href="../../index.html">5. Theater, Persona &amp; Cognition</a><span class="sep">/</span><a href="../index.html">Life of Pi: Audience Presence &amp; Perception</a><span class="sep">/</span><span>Log 3. Collecting and cleaning the reviews</span></nav><article class="page sans" id="3e76d563-4ee0-8038-abb2-c1a159adabae"><header><h1 class="page-title" dir="auto">Log 3. Collecting and cleaning the reviews</h1><table class="properties"><tbody></tbody></table></header><div class="page-body"><p class="" dir="auto" id="3ed6d563-4ee0-808a-b07b-c71a8c024e9b">When I first started collecting the reviews, I learned about web crawling and tried to use it. However, I could not make it work correctly. In the end, I copied and pasted the reviews one by one from YES24 and Interpark, two Korean ticketing websites. I collected 1,389 reviews.</p><p class="" dir="auto" id="3ed6d563-4ee0-8013-aaa0-dd17494e6d18">When I looked through the spreadsheet, I found some reviews that seemed to be repeated. I did not automatically remove every short review that had the same words. Short comments could look the same even when different people wrote them, so I kept those reviews.</p><p class="" dir="auto" id="3ed6d563-4ee0-80b9-a228-f11dc777f21d">I checked the longer repeated reviews one by one. I removed 13 repeated copies and kept one copy of each review. This left 1,376 reviews for the main analysis.</p><p class="" dir="auto" id="3ed6d563-4ee0-8044-baf6-e89dd0023e81">I also kept the original file with all 1,389 reviews. This allowed me to return to the first version if I needed to check what had changed.</p><p class="" dir="auto" id="3ed6d563-4ee0-8022-a5d4-c2087242196b">
+
+body{max-width:900px;margin:2em auto;padding:0 1.2em;}
+img{max-width:100%;height:auto;}
+.crumbs{font-size:14px;color:#787774;margin-bottom:1.2em;}
+.crumbs a{color:#787774;}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:1em 0;}
+.card{display:block;border:1px solid #e3e2e0;border-radius:8px;padding:14px 16px;text-decoration:none!important;color:inherit;background:#fff;}
+.card:hover{background:#f7f6f3;}
+.card b{display:block;margin-bottom:6px;}
+.card span{font-size:14px;color:#5a5955;}
+.loglist{list-style:none!important;padding:0!important;margin-left:0!important;}.loglist li{list-style:none!important;}
+.loglist li{border-bottom:1px solid #eee;padding:8px 2px;}
+details summary{cursor:pointer;}
+footer.site{margin-top:3em;padding-top:1em;border-top:1px solid #eee;font-size:13px;color:#999;}
+code{color:inherit!important;background:none!important;font-family:inherit!important;font-size:inherit!important;padding:0!important;}
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><div class="crumbs"><a href="../../../index.html">THE H.K. PERCEPTION LAB</a> / <a href="../../index.html">5. Theater, Persona &amp; Cognition</a> / <a href="../index.html">Life of Pi: Audience Presence &amp; Perception</a> / Log 3. Collecting and cleaning the reviews</div><article class="page sans" id="3e76d563-4ee0-8038-abb2-c1a159adabae"><header><h1 class="page-title" dir="auto">Log 3. Collecting and cleaning the reviews</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody></tbody></table></header><div class="page-body"><p class="" dir="auto" id="3ed6d563-4ee0-808a-b07b-c71a8c024e9b">When I first started collecting the reviews, I learned about web crawling and tried to use it. However, I could not make it work correctly. In the end, I copied and pasted the reviews one by one from YES24 and Interpark, two Korean ticketing websites. I collected 1,389 reviews.</p><p class="" dir="auto" id="3ed6d563-4ee0-8013-aaa0-dd17494e6d18">When I looked through the spreadsheet, I found some reviews that seemed to be repeated. I did not automatically remove every short review that had the same words. Short comments could look the same even when different people wrote them, so I kept those reviews.</p><p class="" dir="auto" id="3ed6d563-4ee0-80b9-a228-f11dc777f21d">I checked the longer repeated reviews one by one. I removed 13 repeated copies and kept one copy of each review. This left 1,376 reviews for the main analysis.</p><p class="" dir="auto" id="3ed6d563-4ee0-8044-baf6-e89dd0023e81">I also kept the original file with all 1,389 reviews. This allowed me to return to the first version if I needed to check what had changed.</p><p class="" dir="auto" id="3ed6d563-4ee0-8022-a5d4-c2087242196b">
 </p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span><footer class="site">Hwakyung Kang · THE H.K. PERCEPTION LAB</footer></body></html>
